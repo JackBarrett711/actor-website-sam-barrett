@@ -1,0 +1,284 @@
+html {
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgb(255, 176, 176);
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+}
+
+nav > ul > a {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 800px) {
+  nav > ul > a {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.headerbanner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background-image: radial-gradient(
+    ellipse farthest-corner at 45px 45px,
+    #0000ff 0%,
+    #00ffff 95%
+  );
+  text-align: center;
+  height: fit-content;
+  padding: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.mainheader > h1 {
+  font-size: 4rem;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow: 0px 0px 10px black;
+  color: rgb(189, 255, 255);
+}
+.subheadertext {
+  text-shadow: 0px 0px 10px black;
+  color: rgb(189, 255, 255);
+}
+
+.mainheader > h2 {
+  font-size: 2rem;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 800px) {
+  .mainheader > h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .mainheader > h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* @media (max-width: 650px) {
+  .section1container3 {
+    display: none;
+  }
+} */
+
+/* Fix for iFrame? */
+/* [style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+[style*="--aspect-ratio"] > img {
+  height: auto;
+}
+@supports (--custom: property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+} */
+/* End of fix for iFrame */
+
+@media (min-width: 1150px) and (max-width: 1750px) {
+  .section1container3 {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1150px) and (max-width: 1750px) {
+  .section1container3 > div {
+    margin: 0.5%;
+  }
+}
+/* margin:auto not working below to center the text? */
+.section1container1 {
+  flex-grow: 1;
+  margin: auto;
+}
+
+.section4 {
+  background-color: rgb(255, 226, 226);
+}
+
+.section1,
+.section2,
+.section3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgb(234, 234, 255);
+  height: fit-content;
+  align-items: center;
+  align-content: center;
+}
+
+@media (max-width: 800px) {
+  .section1 {
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.section1 > div,
+.section2 > div,
+.section3 > div {
+  margin: 5px;
+  padding: 5px;
+}
+
+.section1 {
+  background-image: radial-gradient(
+    ellipse farthest-corner at 70px 70px,
+    #b8fdd7 0%,
+    #fce3ff 75%
+  );
+}
+
+h3 {
+  padding: 0px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+ul {
+  margin: 3px;
+}
+
+.mainphoto {
+  max-width: 40vw;
+  overflow: hidden;
+  position: center;
+  box-shadow: 0px 0px 5px 5px goldenrod;
+}
+
+@media (max-width: 800px) {
+  .mainphoto {
+    max-width: 100%;
+  }
+}
+
+.socialmedia {
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+
+.socialmedia > a {
+  margin: 10px;
+}
+
+.section2 {
+  background-color: rgb(255, 230, 193);
+}
+
+.section2 > h2,
+.section3 > h2 {
+  font-size: 2.5rem;
+  margin: 5px;
+  padding: 5px;
+}
+
+.section2container1 {
+  display: flex;
+  overflow-x: scroll;
+}
+
+table {
+  text-align: left;
+  padding: 5px;
+  margin: 5px;
+  flex-grow: 1;
+  box-shadow: 0px 0px 10px 2px red;
+}
+
+th {
+  font-size: 2rem;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+td {
+  text-align: left;
+  padding: 5px;
+  margin: 5px;
+}
+
+td > p {
+  margin: 5px;
+}
+
+th > img {
+  box-align: center;
+}
+
+.creditimage {
+  min-width: 500px;
+  max-width: 500px;
+  height: auto;
+}
+
+.section3 {
+  background-color: rgb(215, 255, 206);
+}
+
+.section3container1 {
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: stretch;
+}
+.skillheader {
+  font-size: 1.3rem;
+  margin: 1px;
+  padding: 1px;
+}
+
+@media (max-width: 1100px) {
+  .section3container1 {
+    flex-wrap: wrap;
+    align-content: stretch;
+  }
+}
